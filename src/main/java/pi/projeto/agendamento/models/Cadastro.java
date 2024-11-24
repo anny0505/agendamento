@@ -1,8 +1,14 @@
 package pi.projeto.agendamento.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Cadastro {
 
 	private String nome;
+	
+	@Id
 	private String matricula;
 	private String turma;
 	private String senha;

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body, h1, form, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/images/esporte-fundo.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.caixa-formulario {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.caixa-formulario h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.caixa-formulario input[type="text"],
+.caixa-formulario input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.caixa-formulario input:focus {
+    border-color: #34d399;
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
+}
+
+.caixa-formulario .termos-condicoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.caixa-formulario .termos-condicoes input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.caixa-formulario button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.caixa-formulario button:hover {
+    background-color: #218838;
+}
+
+.caixa-formulario .link-login {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.caixa-formulario .link-login:hover {
+    color: #0056d6;
+    text-decoration: underline;
+}

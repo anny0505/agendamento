@@ -1,5 +1,6 @@
 package pi.projeto.agendamento.models;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -43,6 +44,11 @@ public class Cadastro {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	@Override
+	public String toString() {
+		return "Cadastro [nome=" + nome + ", matricula=" + matricula + ", turma=" + turma + ", senha=" + senha + "]";
 	}
 
 }
